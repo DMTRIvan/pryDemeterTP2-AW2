@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./recursos/css/style.css">
+    <script defer src="recursos/js/altas.js"></script>
+    <title>Alta de productos</title>
+</head>
+<body>
+    <header class="cabecera-principal">
+        <h1>Productos electronicos</h1>
+        <nav class="menu-principal">
+            <a href="index.html">Productos</a> <a href="altas.html">Altas</a>
+        </nav>
+    </header>
+    <main class="contenido-principal">
+        <h2 class="form_h2">Ingrese los productos:</h2>
+        <div class="mensaje-accion" id="mensaje-accion"></div>
+        <section>
+            <form id="formulario" class="formulario-nuevo"action="http://localhost:3000/productos" method="POST">
+                <label for="Nombre">Nombre:</label>
+                <input type="text" name="nombre" required>
+                <label for="Marca">Marca</label>
+                <input type="text" name="marca" required>
+                <label for="Categoria">Categoria</label>
+                <input type="text" name="categoria" required>
+                <label for="Stock">Stock</label>
+                <input type="number" name="stock" required>
+                <button class="formulario-altas-boton" type="submit">Enviar</button>
+
+            </form>
+        </section>
+    </main>
+    <footer class="pie-principal">API</footer>
+</body>
+</html>

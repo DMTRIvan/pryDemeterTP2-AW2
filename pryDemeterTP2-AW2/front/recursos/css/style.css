@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+    outline: 0;
+}
+:root {
+    font-size: 18px;
+    font-family: sans-serif;
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+.cabecera-principal {
+    padding-inline: 20px;
+    min-height: auto;
+}
+.menu-principal {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding-inline: 15px;
+    height: 50px;
+}
+.contenido-principal {
+    flex-grow: 1;
+}
+.productos {
+    max-width: 90%;
+    margin: 0 auto;
+    padding-block: 15px;
+}
+.productos article {
+    border-bottom: 2px solid #eee;
+}
+.productos article ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-block: 10px;
+}
+.productos-nombre {
+    display: flex;
+    justify-content: space-between;
+}
+
+.productos-nombre__boton {
+    width: 10%;
+    display: inline-block;
+    font-size: 1rem;
+    padding: 5px 10px;
+    text-decoration: none;
+    background-color: #eee;
+    border: 1px solid #333;
+    color: #000;
+    text-align: center; /* Alinea el texto al centro */
+}
+/*--------------Formularios------------------------------*/
+.formulario-editar,
+.formulario-nuevo {
+    padding-block: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 90%;
+    gap: 10px;
+}
+
+.formulario-editar input,
+.formulario-nuevo input {
+    font-size: 1rem;
+    padding: 5px 10px;
+}
+.formulario-editar button,
+.formulario-nuevo button {
+    width: 50%;
+    background-color: rgb(136, 240, 136);
+    font-size: 1rem;
+    padding: 5px 10px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.borrar-producto {
+    padding-block: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 90%;
+    gap: 10px;
+}
+
+.borrar-producto button {
+    display: inline;
+    width: 50%;
+    background-color: #e23838;
+    font-size: 1rem;
+    padding: 5px 10px;
+    color: #fff;
+    align-self: flex-end;
+    cursor: pointer;
+}
+.mensaje-accion {
+    display: none;
+    margin: 0 auto;
+    margin-block: 10px;
+    padding-inline: 10px;
+    padding-block: 5px;
+    max-width: 90%;
+}
+.mensaje-accion-ok {
+    background-color: #9be498;
+    animation: fade-out 0.8s 4s forwards;
+}
+.mensaje-accion-alerta {
+    background-color: #f7ff86;
+    animation: fade-out 0.8s 4s forwards;
+}
+.pie-principal {
+    display: flex;
+    justify-content: center;
+    min-height: 50px;
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+/*--------------ALTA------------------------------*/
+.form_h2{
+    text-align: center; /* Esto centrará horizontalmente el contenido */
+    transform: translateY(-50%); /* Esto ajustará el elemento verticalmente para que esté perfectamente centrado */
+}
